@@ -1,4 +1,4 @@
-apt-get install -y git zsh curl vim tmux
+apt-get install -y zsh curl vim tmux
 
 #vim plugin
 mkdir -p ~/.vim/autoload ~/.vim/bundle 
