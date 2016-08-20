@@ -1,4 +1,11 @@
-apt-get install -y zsh curl vim tmux
+if [ -n "$(command -v apt-get)" ]; then
+	apt-get install -y zsh curl vim tmux
+elif [ -n "$(command -v yum)" ]; then
+	yum install -y zsh curl vim tmux
+else
+	echo "can't find package manager!"
+	exit
+fi
 
 #vim plugin
 mkdir -p ~/.vim/autoload ~/.vim/bundle 
