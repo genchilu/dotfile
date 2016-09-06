@@ -14,3 +14,4 @@ inoremap [ []<Esc>i
 inoremap {<CR> {<CR>}<Esc>ko
 set colorcolumn=80
 map <C-n> :NERDTreeToggle<CR>
+nmap <F8> :TagbarToggle<CR>
