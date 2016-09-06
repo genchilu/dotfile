@@ -1,9 +1,9 @@
 if [ -n "$(command -v apt-get)" ]; then
-	apt-get update -y
-	apt-get install -y zsh curl vim tmux ctags
+	sudo apt-get update -y
+	sudo apt-get install -y zsh curl vim tmux ctags
 elif [ -n "$(command -v yum)" ]; then
-	yum update -y
-	yum install -y zsh curl vim tmux ctags
+	sudo yum update -y
+	sudo yum install -y zsh curl vim tmux ctags
 else
 	echo "can't find package manager!"
 	exit
