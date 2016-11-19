@@ -1,9 +1,9 @@
 if [ -n "$(command -v apt-get)" ]; then
 	sudo apt-get update -y
-	sudo apt-get install -y zsh curl vim tmux ctags
+	sudo apt-get install -y zsh curl vim tmux git htop
 elif [ -n "$(command -v yum)" ]; then
 	sudo yum update -y
-	sudo yum install -y zsh curl vim tmux ctags
+	sudo yum install -y zsh curl vim tmux git htop
 else
 	echo "can't find package manager!"
 	exit
@@ -18,7 +18,8 @@ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 chsh -s /bin/zsh
 git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+echo "alias gitlogall='git log --all --graph --color --decorate'" >> ~/.zshrc
 sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"bira\"/g' ~/.zshrc
 
-cp .vimrc ~/.vimrc
-cp .tmux.conf ~/.tmux.conf
+cp basic-vimrc ~/.vimrc
+cp tmux.conf ~/.tmux.conf

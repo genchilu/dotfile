@@ -1,0 +1,7 @@
+call pathogen#infect()
+call pathogen#helptags()
+nmap <F8> :TagbarToggle<CR>
+let g:pymode_rope_lookup_project = 0
+let g:pymode_rope = 0
+let g:syntastic_python_pylint_post_args="--max-line-length=120"
+set expandtab
