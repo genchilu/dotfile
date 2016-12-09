@@ -9,7 +9,7 @@ else
 	exit
 fi
 
-git clone git://github.com/majutsushi/tagbar ~/.vim/bundle/tagbar
+git clone https://github.com/majutsushi/tagbar ~/.vim/bundle/tagbar
 git clone https://github.com/klen/python-mode.git ~/.vim/bundle/python-mode
 
 cat python-vimrc >> ~/.vimrc
