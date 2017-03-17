@@ -1,7 +1,7 @@
 #install golang
-curl -L -o go1.7.linux-amd64.tar.gz https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.7.linux-amd64.tar.gz
-rm -rf go1.7.linux-amd64.tar.gz
+curl -L -o go1.8.linux-amd64.tar.gz https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.8.linux-amd64.tar.gz
+rm -rf go1.8.linux-amd64.tar.gz
 
 #dir for golang
 sudo mkdir /goprojects
