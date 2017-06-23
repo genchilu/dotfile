@@ -11,3 +11,4 @@ set colorcolumn=120
 map <C-n> :NERDTreeToggle<CR>
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
