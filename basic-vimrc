@@ -6,7 +6,7 @@ set tabstop=4
 set shiftwidth=4
 set ai
 set cursorline
-set bg=light
+set bg=dark
 set colorcolumn=120
 map <C-n> :NERDTreeToggle<CR>
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
