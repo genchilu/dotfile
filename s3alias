@@ -1,0 +1,17 @@
+
+s3ls() {
+	if [ "$1" = "/" ]; then
+		aws s3api list-buckets | jq '.Buckets[].Name'
+	else
+		aws s3 ls ${1:1}
+	fi
+}
+
+s3get() {
+	aws s3 cp s3://${1:1} $2
+}
+
+s3put() {
+	aws s3 cp $1 s3://${2:1}
+}
+
